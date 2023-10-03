@@ -135,7 +135,7 @@ button {
 .main-left__censor {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20px;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -161,6 +161,7 @@ button {
 .censor__temp-value {
     display: flex;
     flex-wrap: nowrap;
+    width: 110px;
     color: var(--primary--color-one);
     font-size: 3rem;
     font-weight: 500;
