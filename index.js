@@ -22,12 +22,23 @@ var luongMua = document.getElementById("rain");
 var dbRef = firebase.database().ref().child("/Sensor/Temp");
 var dbRef2 = firebase.database().ref().child("/Sensor/Humid");
 var dbRef3 = firebase.database().ref().child("/Sensor/Gas");
-var dbRef4 = firebase.database().ref().child("/Sensor/Rain");
+// var dbRef4 = firebase.database().ref().child("/Sensor/Rain");
 
 dbRef.on("value", (snap) => (nhietDo.innerText = snap.val()));
 dbRef2.on("value", (snap) => (doAm.innerText = snap.val()));
 dbRef3.on("value", (snap) => (khiGa.innerText = snap.val()));
-dbRef4.on("value", (snap) => (luongMua.innerText = snap.val()));
+// dbRef4.on("value", (snap) => (luongMua.innerText = snap.val()));
+
+database.ref("/Sensor/Rain").on("value", function (snapshot) {
+    if (snapshot.exists()) {
+        var mua = snapshot.val();
+        if (mua == 1)
+            luongMua.innerHTML = "Có";
+        else
+            luongMua.innerHTML = "Ko";
+
+    } else console.log("No data available!");
+});
 
 // Thay đổi sự kiện nút button
 btnOffOne.onclick = function () {
