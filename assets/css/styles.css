@@ -356,6 +356,32 @@ button {
     background-color: var(--primary--color-one);
 }
 
+.main__chart {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.chart-data {
+    margin-top: 15px;
+}
+
+.chart__heading {
+    color: var(--primary--color-two);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.chart-temp__content {
+    color: var(--primary--color-one);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.chart__frame {
+    margin-top: 10px;
+}
+
 /* Footer */
 .footer {
     padding: 40px 0 10px;
