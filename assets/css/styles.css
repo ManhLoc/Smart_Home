@@ -403,6 +403,10 @@ button {
 }
 
 /* Footer */
+.footer__inner {
+    padding: 10px;
+}
+
 .footer {
     padding: 40px 0 10px;
     margin-top: 70px;

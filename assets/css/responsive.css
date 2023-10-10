@@ -90,6 +90,10 @@
         grid-template-columns: 1fr;
     }
 
+    .chart__frame {
+        width: 270px;
+    }
+
     .footer__top {
         display: block;
     }
