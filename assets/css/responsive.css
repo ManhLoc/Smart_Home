@@ -90,8 +90,35 @@
         grid-template-columns: 1fr;
     }
 
-    .chart__frame {
-        width: 270px;
+    .main__chart {
+        text-align: center;
+        background-color: white;
+        padding: 0;
+        scale: 0.8;
+        margin-top: 0;
+    }
+
+    .chart__inner {
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .chart-data {
+        padding: 0;
+    }
+
+    /* .chart-temp__content {
+        margin-bottom: -40px;
+    } */
+
+    /* .chart__frame {
+        position: absolute; 
+        max-width: 270px; 
+        scale: 0.7;
+    } */
+
+    .footer {
+        margin-top: 0;
     }
 
     .footer__top {
