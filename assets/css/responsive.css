@@ -18,6 +18,10 @@
     .main-right {
         width: auto;
     }
+
+    .chart__inner {
+        display: block;
+    }
 }
 
 /* Tablet */

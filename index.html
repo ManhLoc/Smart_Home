@@ -472,29 +472,39 @@
                 </div>
                 <div class="main__chart">
                     <h3 class="chart__heading">Measured data chart</h3>
-                    <div class="chart-data">
-                        <p class="chart-temp__content">Temp:</p>
-                        <iframe
-                            class="chart__frame"
-                            style="border: 1px solid #cccccc"
-                            src="https://time.is/vi/"
-                        ></iframe>
-                    </div>
-                    <div class="chart-data">
-                        <p class="chart-temp__content">Humid:</p>
-                        <iframe
-                            class="chart__frame"
-                            style="border: 1px solid #cccccc"
-                            src="https://time.is/vi/"
-                        ></iframe>
-                    </div>
-                    <div class="chart-data">
-                        <p class="chart-temp__content">Gas:</p>
-                        <iframe
-                            class="chart__frame"
-                            style="border: 1px solid #cccccc"
-                            src="https://time.is/vi/"
-                        ></iframe>
+                    <div class="chart__inner">
+                        <div class="chart-data">
+                            <p class="chart-temp__content">Temp:</p>
+                            <iframe
+                                class="chart__frame"
+                                style="border: 1px solid #cccccc"
+                                src="https://thingspeak.com/channels/2253800/charts/1?average=10&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=Temperature&type=column&yaxis=%C4%91%E1%BB%99+C&yaxismax=100&yaxismin=0"
+                            ></iframe>
+                        </div>
+                        <div class="chart-data">
+                            <p class="chart-temp__content">Humid:</p>
+                            <iframe
+                                class="chart__frame"
+                                style="border: 1px solid #cccccc"
+                                src="https://thingspeak.com/channels/2253800/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+                            ></iframe>
+                        </div>
+                        <div class="chart-data">
+                            <p class="chart-temp__content">Gas:</p>
+                            <iframe
+                                class="chart__frame"
+                                style="border: 1px solid #cccccc"
+                                src="https://thingspeak.com/channels/2253800/charts/3?average=10&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Gas&type=line"
+                            ></iframe>
+                        </div>
+                        <div class="chart-data">
+                            <p class="chart-temp__content">Gas:</p>
+                            <iframe
+                                class="chart__frame"
+                                style="border: 1px solid #cccccc"
+                                src="https://thingspeak.com/channels/2253800/charts/3?average=10&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Gas&type=line"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
