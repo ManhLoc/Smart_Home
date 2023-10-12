@@ -1,14 +1,14 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyDXUrxjqRdRrb1ZFlieayfaK9dKOjiPC6A",
-    authDomain: "smart-home-d4886.firebaseapp.com",
-    databaseURL:
-        "https://smart-home-d4886-default-rtdb.firebaseio.com",
-    projectId: "smart-home-d4886",
-    storageBucket: "smart-home-d4886.appspot.com",
-    messagingSenderId: "231525698998",
-    appId: "1:231525698998:web:5bfc6da9db3fa45b6dc517",
-    measurementId: "G-12X2CZRSKP",
+const firebaseConfig = {
+    apiKey: "AIzaSyAdd1ziU6jZmzYuFFX3DmnMND8lBkbXZhw",
+    authDomain: "iot-lap1.firebaseapp.com",
+    databaseURL: "https://iot-lap1-default-rtdb.firebaseio.com",
+    projectId: "iot-lap1",
+    storageBucket: "iot-lap1.appspot.com",
+    messagingSenderId: "856790671716",
+    appId: "1:856790671716:web:19d7c5ea8e20ca82db1a71",
+    measurementId: "G-85SV012EFK"
 };
+
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
@@ -32,7 +32,7 @@ dbRef3.on("value", (snap) => (khiGa.innerText = snap.val()));
 database.ref("/Sensor/Rain").on("value", function (snapshot) {
     if (snapshot.exists()) {
         var mua = snapshot.val();
-        if (mua == 1)
+        if (mua == 0)
             luongMua.innerHTML = "Có";
         else
             luongMua.innerHTML = "Ko";
